@@ -1,0 +1,34 @@
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+}
+
+.category-icon-sm {
+    width: 40px;
+    height: 40px;
+}
+
+.category-icon-md {
+    width: 56px;
+    height: 56px;
+}
+
+.category-icon-lg {
+    width: 72px;
+    height: 72px;
+}
+
+.category-icon-emoji {
+    font-size: 1.5rem;
+}
+
+.category-icon-md .category-icon-emoji {
+    font-size: 1.75rem;
+}
+
+.category-icon-lg .category-icon-emoji {
+    font-size: 2rem;
+}

@@ -1,0 +1,69 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) 0;
+}
+
+.month-total-card {
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.month-label {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.month-total {
+    font-size: var(--font-size-4xl);
+    font-weight: 800;
+    color: var(--color-white);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .month-total {
+        font-size: var(--font-size-3xl);
+    }
+
+    .month-label {
+        font-size: var(--font-size-lg);
+    }
+}
